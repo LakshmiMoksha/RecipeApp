@@ -1,7 +1,7 @@
 # FlavorFiesta — A Full-Stack Recipe Web Application
 
 FlavorFiesta is an interactive, full-stack recipe discovery and food ordering platform developed using Flask, React, and SQLite. 
-It enables users to explore recipes based on mood and dietary preferences, view ingredients with calorie details, follow step-by-step cooking instructions, watch tutorial videos,
+It enables users to explore recipes based on your interest, view ingredients, follow step-by-step cooking instructions
 and order dishes online via food delivery platforms.
 
 ---
@@ -21,7 +21,7 @@ Email: 224g1a3246@srit.ac.in
 
 ##  Tech Stack
 
-- **Frontend**: React, Bootstrap, CSS3, Axios  
+- **Frontend**:HTML5, CSS3, Bootstrap, JavaScript
 - **Backend**: Flask (Python), Jinja2  
 - **Database**: SQLite3  
 - **Authentication**: Flask-Mail (OTP-based registration)  
@@ -31,10 +31,9 @@ Email: 224g1a3246@srit.ac.in
 
 ##  Features
 
-- Search recipes by name, mood, or type (vegetarian/non-vegetarian)
+- Search recipes by name (vegetarian/non-vegetarian)
 - View detailed ingredients with calorie information
 - Follow step-by-step cooking instructions
-- Watch embedded YouTube tutorial videos
 - Order dishes online via Swiggy, Zomato, UberEats, or UPI QR code
 - Secure user registration and login with OTP verification
 - Integrated chatbot for real-time assistance
