@@ -49,3 +49,8 @@ Email: 224g1a3246@srit.ac.in
 ```bash
 git clone https://github.com/LakshmiMoksha/RecipeApp.git
 cd RecipeApp
+
+
+Live Demo
+You can try out the application here:
+🔗 https://recipeapp-nt65.onrender.com
