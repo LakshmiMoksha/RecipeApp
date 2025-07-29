@@ -15,14 +15,23 @@
             <a class="view-button" href="{{ recipe.sourceUrl }}" >View Full Recipe</a>
           {% endif %}
 
-          <!-- Show QR section only if logged in -->
+           <!-- Show QR section only if logged in -->
           {% if session.get('user_name') %}
-            <div class="qr-section">
-              <p><strong>Order This Recipe:</strong></p>
-              <p>Scan the QR code to pay and order directly from us.</p>
-              <img src="{{ url_for('static', filename='images/my_qr.jpg') }}" alt="Your UPI QR" class="qr-image">
-              <small style="color: #999;">Pay via any UPI app (GPay, PhonePe, Paytm)</small>
-            </div>
+            <!-- External Food App Order Section -->
+<!-- External Order Dropdown -->
+<div class="external-order-section">
+  <p><strong>Order This Recipe from:</strong></p>
+  <div class="dropdown">
+    <button class="dropbtn">Choose App</button>
+    <div class="dropdown-content">
+      <a href="https://www.swiggy.com/" target="_blank">Swiggy</a>
+      <a href="https://www.zomato.com/" target="_blank">Zomato</a>
+      <a href="https://www.ubereats.com/" target="_blank">UberEats</a>
+    </div>
+  </div>
+</div>
+
+
           {% else %}
             <p class="login-warning">🔒 <a href="{{ url_for('login') }}">Login</a> to place your order via QR code.</p>
           {% endif %}

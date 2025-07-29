@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, session, url_for, jsonify,flash,get_flashed_messages
 from flask_mail import Mail, Message
 import random, sqlite3, os
+import razorpay
 
 # ================== Flask Setup ===================
 app = Flask(__name__)
@@ -377,11 +378,6 @@ def contact():
 
 
 # ================== Razorpay Payment ======================
-@app.route('/payment/<int:recipe_id>')
-def payment(recipe_id):
-    amount = 100 * 100  # ₹100 in paise
-    order = razorpay_client.order.create({'amount': amount, 'currency': 'INR', 'payment_capture': '1'})
-    return render_template('payment.html', order_id=order['id'], recipe_id=recipe_id)
 
 # ================== About Page ======================
 @app.route('/about')
