@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, session, url_for, jsonify,flash,get_flashed_messages
 from flask_mail import Mail, Message
 import random, sqlite3, os
-import razorpay
+
 
 # ================== Flask Setup ===================
 app = Flask(__name__)

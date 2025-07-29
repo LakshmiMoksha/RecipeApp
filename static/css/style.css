@@ -876,11 +876,12 @@ footer {
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
+  overflow: visible; /* 🔥 allow dropdown to be visible */
+  position: relative; /* 🔥 required for dropdown positioning */
   width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
 }
-
 
 .recipe-card:hover {
   transform: translateY(-8px);
@@ -1042,12 +1043,12 @@ footer {
 }
 
 .dropbtn {
-  background-color: #ff5722;
+  background-color: #ff6f61;
   color: white;
-  padding: 10px 16px;
-  font-size: 16px;
+  padding: 8px 14px;
+  font-size: 14px;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -1055,28 +1056,24 @@ footer {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 6px;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  border-radius: 5px;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 10px 16px;
+  color: #333;
+  padding: 10px 14px;
   text-decoration: none;
   display: block;
-  transition: background 0.3s;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #ff6f61;
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #e64a19;
 }
