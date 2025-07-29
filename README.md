@@ -4,21 +4,6 @@ FlavorFiesta is an interactive, full-stack recipe discovery and food ordering pl
 It enables users to explore recipes based on your interest, view ingredients, follow step-by-step cooking instructions
 and order dishes online via food delivery platforms.
 
----
-
-## Team Information
-
-**Team Lead**  
-Lakshmi Moksha Boya  
-Email: 224g1a3246@srit.ac.in  
-
-**Team Members**  
-1. Meghana Kona – 224g1a3254@srit.ac.in  
-2. Likhitha Giddaluru – 224g1a3247@srit.ac.in  
-3. Lahari Gadamsetty – 224g1a3245@srit.ac.in  
-
----
-
 ##  Tech Stack
 
 - **Frontend**:HTML5, CSS3, Bootstrap, JavaScript
