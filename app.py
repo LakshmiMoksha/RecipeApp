@@ -15,7 +15,7 @@ app.config['MAIL_PASSWORD'] = 'mpul kfev dcju ucji'
 mail = Mail(app)
 
 # ================= Razorpay (Mock Keys) ============
-razorpay_client = razorpay.Client(auth=("rzp_test_xxx", "rzp_secret_xxx"))
+
 
 # ================== DB INIT =======================
 # ================== DB INIT =======================
